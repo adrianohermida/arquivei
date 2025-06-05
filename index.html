@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivei.online – Flipbooks Jurídicos e Estantes Digitais com Segurança e IA</title>
+    <meta name="description" content="Converta processos e documentos em estantes digitais com IA. Compartilhe com segurança, integre com tribunais e organize seu acervo com o Arquivei.online.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(12,58,95,0.95) 0%, rgba(52,168,83,0.9) 100%);
+        }
+        
+        .flipbook-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(12, 58, 95, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-blue-900">Arquivei<span class="text-green-600">.online</span></span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-900 hover:text-green-600 font-medium">Início</a>
+                <a href="#how-it-works" class="text-blue-900 hover:text-green-600 font-medium">Como Funciona</a>
+                <a href="#shelves" class="text-blue-900 hover:text-green-600 font-medium">Estantes Digitais</a>
+                <a href="#government" class="text-blue-900 hover:text-green-600 font-medium">Para Órgãos Públicos</a>
+                <a href="#pricing" class="text-blue-900 hover:text-green-600 font-medium">Planos</a>
+                <a href="#contact" class="text-blue-900 hover:text-green-600 font-medium">Contato</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden text-blue-900">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            
+            <div class="hidden md:block">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                    Solicitar Demonstração
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full px-4 pb-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="text-blue-900 hover:text-green-600 py-2 font-medium">Início</a>
+                <a href="#how-it-works" class="text-blue-900 hover:text-green-600 py-2 font-medium">Como Funciona</a>
+                <a href="#shelves" class="text-blue-900 hover:text-green-600 py-2 font-medium">Estantes Digitais</a>
+                <a href="#government" class="text-blue-900 hover:text-green-600 py-2 font-medium">Para Órgãos Públicos</a>
+                <a href="#pricing" class="text-blue-900 hover:text-green-600 py-2 font-medium">Planos</a>
+                <a href="#contact" class="text-blue-900 hover:text-green-600 py-2 font-medium">Contato</a>
+                <button class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-full mt-2">
+                    Solicitar Demonstração
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-32 pb-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    Transforme processos e documentos em acervos digitais acessíveis, navegáveis e seguros
+                </h1>
+                <p class="text-xl text-blue-100 mb-8">
+                    Com o Arquivei.online, você cria flipbooks interativos com IA, organiza seus documentos em estantes digitais e compartilha com segurança.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-white text-green-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition duration-300">
+                        Criar Estante Digital
+                    </button>
+                    <button class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-semibold py-3 px-8 rounded-full transition duration-300">
+                        Ver Demonstração
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <img src="https://www.example.com/flipbook-mockup.png" alt="Mockup da plataforma Arquivei.online" class="flipbook-animation w-full h-auto rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-white rounded-lg shadow-lg flex items-center justify-center">
+                        <i class="fas fa-lock text-green-600 text-3xl"></i>
+                    </div>
+                    <div class="absolute -top-6 -right-6 w-20 h-20 bg-white rounded-lg shadow-lg flex items-center justify-center">
+                        <i class="fas fa-search text-blue-900 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Arquivei Section -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">O que é o Arquivei.online?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A plataforma líder em gestão eletrônica de documentos jurídicos, combinando tecnologia de ponta com segurança jurídica.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-book text-blue-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Conversão de documentos</h3>
+                            <p class="text-gray-600">
+                                Transforme automaticamente seus documentos e processos em flipbooks jurídicos interativos com navegação intuitiva.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-sitemap text-blue-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Estantes Digitais Segmentadas</h3>
+                            <p class="text-gray-600">
+                                Organize seus documentos em estantes digitais por cliente, processo ou área, com controle de acesso personalizado.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-blue-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Redistribuição Segura</h3>
+                            <p class="text-gray-600">
+                                Compartilhe documentos públicos ou confidenciais com controle total sobre quem acessa e por quanto tempo.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-code text-blue-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Integração com Tribunais</h3>
+                            <p class="text-gray-600">
+                                Conecte-se diretamente com PJe, JTE, CRC, ARISP e outros sistemas via API para atualização automática de processos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-blue-900 rounded-full opacity-10"></div>
+                    <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-green-600 rounded-full opacity-10"></div>
+                    
+                    <h3 class="text-2xl font-bold text-blue-900 mb-6">Inteligência Artificial Jurídica</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Resumo automático do conteúdo processual</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Organização inteligente de documentos por similaridade</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Busca semântica por conteúdo jurídico</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Classificação automática de documentos</span>
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <span>Detecção de alterações em documentos repetidos</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8">
+                        <button class="bg-blue-900 hover:bg-blue-800 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+                            Saiba Mais Sobre a IA
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="shelves" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Funcionalidades Exclusivas</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tudo o que você precisa para gerenciar documentos jurídicos com eficiência e segurança
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="feature-card bg-white p-8 rounded-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud-upload-alt text-blue-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Upload e Conversão</h3>
+                    <p class="text-gray-600">
+                        Transforme documentos PDF, Word e imagens em flipbooks interativos com navegação por índice automático.
+                    </p>
+                </div>
+                
+                <!-- Feature Card 2 -->
+                <div class="feature-card bg-white p-8 rounded-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-folder-tree text-blue-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Organização Inteligente</h3>
+                    <p class="text-gray-600">
+                        Crie estantes digitais por CPF, CNPJ, processo ou cliente, com classificação automática por tipo de documento.
+                    </p>
+                </div>
+                
+                <!-- Feature Card 3 -->
+                <div class="feature-card bg-white p-8 rounded-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-search-plus text-blue-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Busca Avançada</h3>
+                    <p class="text-gray-600">
+                        Busca semântica por conteúdo jurídico com leitura OCR e IA que entende termos jurídicos complexos.
+                    </p>
+                </div>
+                
+                <!-- Feature Card 4 -->
+                <div class="feature-card bg-white p-8 rounded-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-blue-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Resumo Automático</h3>
+                    <p class="text-gray-600">
+                        IA jurídica produz resumos executivos de processos, destacando prazos, partes e decisões relevantes.
+                    </p>
+                </div>
+                
+                <!-- Feature Card 5 -->
+                <div class="feature-card bg-white p-8 rounded-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-blue-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Compartilhamento Seguro</h3>
+                    <p class="text-gray-600">
+                        Links temporários, acesso por senha ou certificado digital, com registro completo de visualizações.
+                    </p>
+                </div>
+                
+                <!-- Feature Card 6 -->
+                <div class="feature-card bg-white p-8 rounded-xl transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-project-diagram text-blue-900 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Integrações</h3>
+                    <p class="text-gray-600">
+                        API para conectar com PJe, JTE, CRC, ARISP e outros sistemas jurídicos para captura automática de documentos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Whom Section -->
+    <section id="government" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Para quem é o Arquivei.online?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Solução completa para diferentes perfis de usuários no ecossistema jurídico e documental.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-green-600 transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-balance-scale text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Escritórios de Advocacia</h3>
+                    <p class="text-gray-600">
+                        Distribua processos para clientes de forma organizada com acesso remoto 24/7 e notificações de atualizações.
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-green-600 transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-building text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Departamentos Jurídicos</h3>
+                    <p class="text-gray-600">
+                        Centralize contratos, processos e documentos corporativos com controle de acesso por área e funcionário.
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-green-600 transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-landmark text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Cartórios e Órgãos Públicos</h3>
+                    <p class="text-gray-600">
+                        Publique documentos digitais para cidadãos com segurança e rastreabilidade, reduzindo custos com impressão.
+                    </p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-green-600 transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-user-tie text-green-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-3">Profissionais e Cidadãos</h3>
+                    <p class="text-gray-600">
+                        Organize documentos pessoais como divórcios, certidões e contratos em um acervo digital seguro e acessível.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Planos e Preços</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Escolha a solução ideal para suas necessidades jurídico-documentais
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Plan 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Avulso</h3>
+                        <p class="text-gray-600 mb-6">Para venda de flipbooks individuais</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-blue-900">R$19,90</span>
+                            <span class="text-gray-500">/ flipbook</span>
+                        </div>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>Criação de flipbook individual</span>
+                            </li>
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>5GB de armazenamento</span>
+                            </li>
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>Compartilhamento por link</span>
+                            </li>
+                            <li class="flex items-start text-gray-500">
+                                <i class="fas fa-times text-red-400 mr-3 mt-1"></i>
+                                <span>Sem estantes digitais</span>
+                            </li>
+                            <li class="flex items-start text-gray-500">
+                                <i class="fas fa-times text-red-400 mr-3 mt-1"></i>
+                                <span>Sem IA jurídica</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="w-full bg-white border-2 border-blue-900 text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-50 transition duration-300">
+                            Começar Agora
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plan 2 (Featured) -->
+                <div class="bg-blue-900 text-white rounded-xl shadow-xl overflow-hidden transform scale-105 z-10">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Profissional</h3>
+                                <p class="text-blue-100 mb-6">Acesso completo para escritórios</p>
+                            </div>
+                            <div class="bg-green-600 text-xs font-semibold px-3 py-1 rounded-full">
+                                POPULAR
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">R$199,90</span>
+                            <span class="text-blue-200">/ mês</span>
+                        </div>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <span>Estantes digitais ilimitadas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <span>100GB de armazenamento</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <span>Compartilhamento seguro avançado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <span>IA jurídica (resumo e busca)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <span>Até 10 usuários administrativos</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="w-full bg-green-600 font-semibold py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                            Assinar Agora
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Plan 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Institucional</h3>
+                        <p class="text-gray-600 mb-6">Para órgãos públicos e cartórios</p>
+                        
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-blue-900">Personalizado</span>
+                        </div>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>White label com domínio próprio</span>
+                            </li>
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>Armazenamento ilimitado</span>
+                            </li>
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>Painel administrativo completo</span>
+                            </li>
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>Integração via API</span>
+                            </li>
+                            <li class="flex items-start text-gray-700">
+                                <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                <span>Suporte prioritário</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="w-full bg-white border-2 border-blue-900 text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-50 transition duration-300">
+                            Falar com Vendas
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Benefícios da Plataforma</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Modernização da gestão documental com redução de custos e conformidade jurídica.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Benefit 1 -->
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-recycle text-blue-900 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-blue-900 mb-2">Redução de Retrabalho</h3>
+                            <p class="text-gray-600">
+                                Digitalização de processos elimina repetição de fluxos e impressões físicas.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 2 -->
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-mobile-alt text-blue-900 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-blue-900 mb-2">Acesso Remoto</h3>
+                            <p class="text-gray-600">
+                                Documentos disponíveis 24h por dia em qualquer dispositivo com internet.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 3 -->
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-shield-alt text-blue-900 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-blue-900 mb-2">Compartilhamento Seguro</h3>
+                            <p class="text-gray-600">
+                                Links expiráveis, senhas e certificados digitais para proteção de dados.
+                            </p>
+                        </div>
+                        
+                        <!-- Benefit 4 -->
+                        <div class="bg-white p-6 rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-search-dollar text-blue-900 text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-blue-900 mb-2">Conformidade Jurídica</h3>
+                            <p class="text-gray-600">
+                                Plataforma desenvolvida para atender requisitos da LGPD e normas jurídicas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <img src="https://www.example.com/document-management.png" alt="Organização de documentos na plataforma" class="rounded-lg w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para transformar sua gestão documental?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Solicite uma demonstração gratuita e descubra como o Arquivei.online pode otimizar seus processos jurídicos.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-blue-900 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition duration-300">
+                    Solicitar Demonstração
+                </button>
+                <button class="border-2 border-white hover:bg-white hover:bg-opacity-10 font-semibold py-3 px-8 rounded-full transition duration-300">
+                    Falar com Especialista
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Arquivei.online</h3>
+                    <p class="mb-6">
+                        A plataforma de gestão eletrônica de documentos jurídicos com inteligência artificial e segurança comprovada.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition duration-300">Área do Cliente</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Demonstração ao Vivo</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Blog Jurídico-Tecnológico</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Tutoriais e FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Parceiros e Integradores</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Jurídico</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white transition duration-300">Termos de Uso</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Política de Privacidade</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">LGPD e Conformidade</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Segurança da Informação</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Contratos e SLA</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Contato</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-400"></i>
+                            <span>Av. Paulista, 1106, 7º andar<br>São Paulo, SP</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-gray-400"></i>
+                            <span>(11) 1234-5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gray-400"></i>
+                            <span>contato@arquivei.online</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-gray-400"></i>
+                            <span>(11) 98765-4321</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    &copy; 2023 Arquivei.online - Todos os direitos reservados
+                </div>
+                <div class="text-sm">
+                    <span class="mr-4">CNPJ: 12.345.678/0001-99</span>
+                    <span>Certificado Digital ICP-Brasil</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Change header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
